@@ -1,0 +1,20 @@
+.customNavbar
+{
+background-color: rgba(236, 225, 225, 0.301);
+border-bottom: 1px solid rgba(128, 128, 128, 0.349);
+
+}
+
+.linkSection
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+}
+
+.linkSection a
+{
+    margin-left: 50px;
+    margin-right: 50px;
+}
