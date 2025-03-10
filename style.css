@@ -1,9 +1,39 @@
+:root
+{
+    --c1:#6ac5ba4f;
+    --c2:#fab54e48;
+    --c3:#ed38475d;
+    --c4:#3abec552;
+    --c5:#56c58448;
+    --c6:#4ab1dd3d;
+    
+}
+
+
+
+body
+{
+    margin: 0;
+    padding: 0;
+    background-image: url(/Immagini/backGround2.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
 
 .customNavbar
 {
-background-color: rgba(236, 225, 225, 0.301);
-box-shadow: 0px 0px 20px black;
+    width: 100%;
+    background-color: rgba(51, 43, 87, 0.849);
+    box-shadow: 0px 0px 20px black;
+    backdrop-filter: blur(5px);
+    border-radius: 0px 0px 10px 10px;
+    
+    
+}
 
+.nav-link{
+    color: white !important;
 }
 
 .navLogo
@@ -19,8 +49,118 @@ box-shadow: 0px 0px 20px black;
     margin-left: auto;
 }
 
+.cardContainer a
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.card1:hover::after
+{
+text-align: center;
+width: 200px;
+height: 50px;
+position: absolute;
+content: 'WIFI';
+bottom: -50px;
+color: rgb(255, 253, 253);
+font-weight: bold;
+}
+
+
+.card2:hover::after
+{
+text-align: center;
+width: 200px;
+height: 50px;
+position: absolute;
+content: 'CODING';
+bottom: -50px;
+color: rgb(255, 255, 255);
+font-weight: bold;
+}
+
+
+.card3:hover::after
+{
+text-align: center;
+width: 200px;
+height: 50px;
+position: absolute;
+content: 'PROTECTION';
+bottom: -50px;
+color: rgb(255, 255, 255);
+font-weight: bold;
+}
+
+.card4:hover::after
+{
+text-align: center;
+width: 200px;
+height: 50px;
+position: absolute;
+content: 'OTHER';
+bottom: -50px;
+color: rgb(255, 255, 255);
+font-weight: bold;
+}
+
+
+.card5:hover::after
+{
+text-align: center;
+width: 200px;
+height: 50px;
+position: absolute;
+content: 'BROWSERS';
+bottom: -50px;
+color: rgb(245, 245, 245);
+font-weight: bold;
+}
+
+.card6:hover::after
+{
+text-align: center;
+width: 200px;
+height: 50px;
+position: absolute;
+content: 'TWEAK';
+bottom: -50px;
+color: rgb(255, 255, 255);
+font-weight: bold;
+}
+
+
+
+.icon 
+{
+    width: 80px;
+    height: 80px;
+}
 .img_header
 {
- width: 500px;
- height: 500px;
+    width: 500px;
+    height: 500px;
+    
+}
+
+@media (max-width: 768px) 
+{
+    .cardContainer a {
+        height: 100%;
+        width: 100%;
+    }
+
+    .cardContainer a::after {
+      display: none;
+    }
+
+    .card1{background-color: var(--c1); border-radius: 10px;}
+    .card2{background-color: var(--c2); border-radius: 10px;}
+    .card3{background-color: var(--c3); border-radius: 10px;}
+    .card4{background-color: var(--c4); border-radius: 10px;}
+    .card5{background-color: var(--c5); border-radius: 10px;}
+    .card6{background-color: var(--c6); border-radius: 10px;}
 }
